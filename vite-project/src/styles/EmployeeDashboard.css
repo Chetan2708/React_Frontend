@@ -1,0 +1,209 @@
+/* EmployeeDashboard.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  padding: 40px;
+  background-color: black;
+}
+
+.productivity-container {
+  width: 500px;
+  height: 45px;
+  background: #1a2c2c99;
+  opacity: 1;
+  border-radius: 40px;
+}
+
+.productivity-header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal bold 18px Source Sans Pro;
+  letter-spacing: 0.01px;
+  color: #ffffffb3;
+  opacity: 0.84;
+}
+
+.progress-card {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+}
+.blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5e5e5e82; /* The same background as progress-card */
+  filter: blur(10px); /* Adjust the blur amount as needed */
+  opacity: 0.7; /* Adjust the opacity as needed */
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
+
+.day-progress {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1; /* Ensure the progress elements are on top */
+  margin-bottom: 30px;
+}
+.percent {
+  float: right;
+  margin-right: 40px;
+  color: #36a546;
+}
+
+.day-label {
+  font-size: 12px;
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #36a54680;
+}
+
+.bottom-tabs {
+  width: 100%;
+  background: transparent linear-gradient(262deg, #0f2323 0%, #0f2323 40%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: inset 8px 4px 4px #00000040;
+  border: 1px solid #0f2323;
+  opacity: 1;
+  padding: 20px;
+}
+
+input {
+  background: none;
+}
+
+p {
+  color: azure;
+}
+
+.blurred-card {
+  position: relative;
+  background: #5e5e5e82;
+  filter: blur(10px);
+  opacity: 0.7;
+  pointer-events: none;
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Adjust border-radius as needed */
+  color: white; /* Adjust text color as needed */
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+  margin-right: 10rem;
+}
+.grid-container.mobile {
+  grid-template-columns: 1fr;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1660px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.emp-data {
+  line-height: 3rem;
+}
+
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rem;
+  font-size: 21px;
+}
+
+.Ptext {
+  margin-top: 20px;
+  color: #36a546cc;
+  font-size: 16px;
+}
+.Email {
+  width: 500px;
+  height: 70px;
+  background: #1f191966 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #4a494947;
+  mix-blend-mode: normal;
+  opacity: 1;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+.Password {
+  width: 500px;
+  height: 70px;
+  background: #1f191966 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 3px #fffdfd40, 3px 3px 3px #4a494947;
+  mix-blend-mode: normal;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+  margin-left: 24px;
+}
+
+.login {
+  width: 500px;
+  height: 70px;
+  background: transparent
+    linear-gradient(180deg, #00ff2580 0%, #000000 100%, #36a54680 100%) 0% 0%
+    no-repeat padding-box;
+  mix-blend-mode: normal;
+  border: 2px solid #8cff0026;
+  opacity: 1;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+
+}
+input[type="email"]::placeholder {
+  text-align: center;
+}
+input[type="email"] {
+  text-align: center;
+}
+input[type="password"]::placeholder {
+  text-align: center;
+}
+input[type="password"] {
+  text-align: center;
+}
