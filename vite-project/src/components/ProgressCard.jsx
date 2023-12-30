@@ -12,8 +12,8 @@ const EmployeeDashboard = () => {
         { day: 'Tuesday', percent: 30 },
         { day: 'Wednesday', percent: 50 },
         { day: 'Thursday', percent: 30 },
-        { day: 'Friday', percent: 30 },
-        { day: 'Saturday', percent: 60 },
+        { day: 'Friday', percent: 50 },
+        { day: 'Saturday', percent: 70 },
     ];
 
     return (
